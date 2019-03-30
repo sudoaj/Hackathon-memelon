@@ -2,40 +2,40 @@
 header{
 	background-color:#F85A3E;
 	padding-top: 20px;
-	padding-bottom: 20px;
-	
+	padding-bottom: 40px;
+
 }
 
 body{
 	background-color:#E1E6E1;
 	color: black;
-	font-size:80px;
+	font-size:4vw;
+	//Original font-size;
+	//font-size: 80px;
 	font-family: 'Baloo Chettan';
 	margin: 0;
 	padding: 0;
 	text-align: center;
 
 }
-
-h1{
-	
-	margin: auto;
-	text-align: center;
-	
+p{
+	font-size: 2vw;
 }
 
-h2, h4,h5,h6{
+h1{
+
+	margin: auto;
+	text-align: center;
+
+}
+
+h2, h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
 	margin-top: 0%;
 
 
 }
-
-a{
-	text-decoration: none;
-}
-
 a:link{
 	color: white;
 }
@@ -45,17 +45,20 @@ a:hover{
 }
 a{
 	color: #fff;
+	text-decoration: none;
 }
 img{
 	padding-left: 120px;
 	float: left;
+	max-width: 15vw;
+	height: auto;
 }
 
 .flex-container {
 	display: grid;
-	grid-template-columns: 50% 50%;	
+	grid-template-columns: 50% 50%;
 	align-content: space-between;
-	
+
   }
 
   #meme-container,#meme-container1,#meme-container2,#meme-container3{
