@@ -61,7 +61,7 @@ img{
 	grid-template-columns: 50% 50%;
 	align-content: space-between;
 	justify-content: center;
-	
+
 
   }
 
@@ -72,4 +72,6 @@ img{
   }
 .border-meme{
 	border:3px solid black;
+	border-top: 6px;
+	border-bottom: 6px;
 }
