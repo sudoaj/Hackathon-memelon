@@ -75,8 +75,9 @@
 
             console.log(minutesLabel,secondsLabel);
             setTime();
-
-            scoreLabel.innerHTML = 'High Score: ' + minutesLabel.innerHTML + ':' + secondsLabel.innerHTML;
+            if(compareImages()){
+                scoreLabel.innerHTML = 'High Score: ' + minutesLabel.innerHTML + ':' + secondsLabel.innerHTML;
+            }
 
         }
         // start with letter s
@@ -87,3 +88,15 @@
             //setInterval(setTime, 1000);
         }
     }
+
+    function compareImages(){
+        if (document.getElementById("meme-container").src == document.getElementById("meme-container1").src && document.getElementById("meme-container2").src == document.getElementById("meme-container3").src) 
+        {
+            //alert('matching!');
+            return true;
+    }else{
+        alert('Not matching!');
+        return false;
+    }
+    }
+
