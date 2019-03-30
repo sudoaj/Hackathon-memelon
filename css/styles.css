@@ -11,6 +11,10 @@ body{
 	font: 20px;
 }
 
+h1{
+	margin: auto;
+}
+
 a:link{
 	color: white;
 }
