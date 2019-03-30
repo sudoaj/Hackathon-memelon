@@ -22,13 +22,16 @@
         <div><h3>Meme Matcher</h3></div>
         <div><p>Match all 4 memes in the fastest time possible</p></div>
         <div><p>Timer starts on first click, and ends with spacebar</p></div>
+        <label id="minutes">00</label>:<label id="seconds">00</label>
+        <br>
+        <label id="score">High Score: </label>
 
         <div class="flex-container">
-                <div  onclick="changeImage()" style="align:center"><img id ="meme-container" src="assets/1.jpg" style="align:center" alt=""></div>
-                <div  onclick="changeImage1()" style="align:center"><img id ="meme-container1" src="assets/2.jpg" style="align:center" alt=""></div>
-                <div  onclick="changeImage2()" style="align:center"><img id ="meme-container2" src="assets/3.jpg" style="align:center" alt=""></div>
-                <div  onclick="changeImage3()" style="align:center"><img id ="meme-container3" src="assets/4.jpg" style="align:center" alt=""></div>
-
+                <div  class ="border-meme" onclick="changeImage()" style="align:center"><img id ="meme-container" src="assets/1.jpg" style="align:center" alt=""></div>
+                <div  class ="border-meme" onclick="changeImage1()" style="align:center"><img id ="meme-container1" src="assets/2.jpg" style="align:center" alt=""></div>
+                <div  class ="border-meme" onclick="changeImage2()" style="align:center"><img id ="meme-container2" src="assets/3.jpg" style="align:center" alt=""></div>
+                <div  class ="border-meme" onclick="changeImage3()" style="align:center"><img id ="meme-container3" src="assets/4.jpg" style="align:center" alt=""></div>
+                
               </div>
     </section>
     <script type="text/javascript" src="javascript/scripts.js"></script>

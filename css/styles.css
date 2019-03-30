@@ -60,6 +60,8 @@ img{
 	display: grid;
 	grid-template-columns: 50% 50%;
 	align-content: space-between;
+	justify-content: center;
+	
 
   }
 
@@ -68,3 +70,6 @@ img{
 	max-width: 40%;
 	height: auto;
   }
+.border-meme{
+	border:3px solid black;
+}
