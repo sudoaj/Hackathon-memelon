@@ -73,3 +73,7 @@ img{
 .border-meme{
 	border:3px solid black;
 }
+.score{
+	color: #F85A3E;
+	padding-bottom: 5px;
+}
