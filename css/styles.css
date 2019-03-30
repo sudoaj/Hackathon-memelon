@@ -20,6 +20,8 @@ body{
 }
 p{
 	font-size: 2vw;
+	margin: 0;
+	padding: 0;
 }
 
 h1{
