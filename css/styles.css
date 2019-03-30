@@ -1,0 +1,26 @@
+
+head{
+	background-color:#F85A3E;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+body{
+	background-color:#E1E6E1;
+	color: black;
+	font: 20px;
+}
+
+h1{
+	margin: auto;
+}
+
+a:link{
+	color: white;
+}
+
+a:visited{
+	color: #595B59;
+}
+
+
