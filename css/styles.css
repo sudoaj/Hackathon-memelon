@@ -10,8 +10,8 @@ body{
 	background-color:#E1E6E1;
 	color: black;
 	font-size:4vw;
-	//Original font-size;
-	//font-size: 80px;
+	/* //Original font-size;
+	//font-size: 80px; */
 	font-family: 'Baloo Chettan';
 	margin: 0;
 	padding: 0;
@@ -56,19 +56,12 @@ img{
 	height: auto;
 }
 
-.flex-container {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	align-content: space-between;
-	justify-content: center;
-
-
-  }
-
   #meme-container,#meme-container1,#meme-container2,#meme-container3{
 	margin:20px;
 	max-width: 40%;
-	height: auto;
+	min-width: 40%;
+	max-height: 300px;
+    min-height: 300px;
   }
 .border-meme{
 	border:3px solid black;
@@ -87,4 +80,23 @@ img{
 	padding-top: 0px;
 	padding-bottom: 0px;
 	padding: 0px;
+}
+
+@media screen and (max-width: 766px) {
+	.flex-container {
+		display: grid;
+		/* grid-template-columns: 50% 50%; */
+		align-content: space-between;
+		justify-content: center;
+	  }
+	
+}
+@media screen and (min-width: 766px) {
+	.flex-container {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		align-content: space-between;
+		justify-content: center;
+	  }
+	
 }
