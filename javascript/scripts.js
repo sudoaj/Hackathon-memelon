@@ -5,10 +5,11 @@
     }
 
 
-    var minutesLabel = document.getElementById("minutes");
-    var secondsLabel = document.getElementById("seconds");
-    var totalSeconds = 0;
-    setInterval(setTime, 1000);
+    let minutesLabel = document.getElementById("minutes");
+    let secondsLabel = document.getElementById("seconds");
+    let interval, totalSeconds = 0;
+    
+    
 
     function setTime() {
         totalSeconds++;
@@ -39,12 +40,14 @@
             setTime();
             if(compareImages()){
                 scoreLabel.innerHTML = 'High Score: ' + minutesLabel.innerHTML + ':' + secondsLabel.innerHTML;
+                clearInterval(interval);
             }
 
         }
         // start with letter s
         if(e.keyCode == 83){
-            //console.log(minutesLabel, secondsLabel)
+            clearInterval(interval);
+            interval = setInterval(setTime, 1000);
             totalSeconds = 0
             console.log(minutesLabel, secondsLabel)
             //setInterval(setTime, 1000);
@@ -63,4 +66,3 @@
             return false;
         }
     }
-    
